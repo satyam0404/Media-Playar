@@ -30,16 +30,25 @@ input[type="file"] {
 }
 
 button {
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #007bff;
-  color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3;
+  opacity: 0.9;
+}
+
+button.remove {
+  background-color: #dc3545;
+  color: white;
+}
+
+button:not(.remove) {
+  background-color: #007bff;
+  color: white;
 }
