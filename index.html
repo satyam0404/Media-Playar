@@ -15,6 +15,7 @@
       <h2>Video Player</h2>
       <input type="file" id="videoInput" accept="video/*">
       <video id="videoPlayer" controls></video>
+      <button class="remove" onclick="removeVideo()">❌ Remove Video</button>
     </div>
 
     <!-- Audio Section -->
@@ -22,6 +23,7 @@
       <h2>Audio Player</h2>
       <input type="file" id="audioInput" accept="audio/*">
       <audio id="audioPlayer" controls></audio>
+      <button class="remove" onclick="removeAudio()">❌ Remove Audio</button>
     </div>
 
     <button onclick="playBoth()">▶️ Play Both</button>
