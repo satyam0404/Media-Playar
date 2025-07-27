@@ -27,3 +27,23 @@ document.getElementById('audioInput').addEventListener('change', function () {
     audioPlayer.load();
   }
 });
+
+// Remove video
+function removeVideo() {
+  const videoInput = document.getElementById('videoInput');
+  const videoPlayer = document.getElementById('videoPlayer');
+  videoInput.value = '';
+  videoPlayer.pause();
+  videoPlayer.removeAttribute('src');
+  videoPlayer.load();
+}
+
+// Remove audio
+function removeAudio() {
+  const audioInput = document.getElementById('audioInput');
+  const audioPlayer = document.getElementById('audioPlayer');
+  audioInput.value = '';
+  audioPlayer.pause();
+  audioPlayer.removeAttribute('src');
+  audioPlayer.load();
+}
